@@ -1,3 +1,3 @@
 func_node() {
-echo hello world
+echo hello world,hello manoj
 }
