@@ -1,5 +1,5 @@
-function_name() {
+function() {
 echo hello world
 }
 
-function_name
+function
