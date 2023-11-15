@@ -1,5 +1,5 @@
-function() {
+func_node() {
 echo hello world
 }
 
-function
+func_node
