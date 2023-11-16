@@ -1,10 +1,12 @@
-# Check if a number is positive or negative
+# Check if a number is positive, negative, or zero
 
 echo "Enter a number: "
 read number
 
-if [ $number -g 10 ]; then
+if [ $number -gt 0 ]; then
     echo "The number is positive."
+elif [ $number -lt 0 ]; then
+    echo "The number is negative."
 else
-    echo "The number is non-positive."
+    echo "The number is zero."
 fi
