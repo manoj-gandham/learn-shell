@@ -1,13 +1,10 @@
+# Check if a number is positive or negative
 
-# Specify the URL
-url="https://in.bookmyshow.com/hyderabad/movies/tiger-3/ET00313411"
+echo "Enter a number: "
+read number
 
-# Use curl to fetch the HTML content and grep to extract the rating
-rating=$(curl -s "$url" | grep -oP 'meta\s*itemprop="ratingValue"\s*content="\K[^"]+')
-
-# Print the rating
-if [ -n "$rating" ]; then
-    echo "The rating of the movie is: $rating"
+if [ $number -gt 0 ]; then
+    echo "The number is positive."
 else
-    echo "Unable to retrieve the rating."
+    echo "The number is non-positive."
 fi
