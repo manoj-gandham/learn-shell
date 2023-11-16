@@ -10,4 +10,9 @@ percent=$(curl -s https://www.themoviedb.org/tv/input=$1 | grep user_score_chart
 
 echo percent = $percent
 
-if [ -z]
+if [ $percent -ge 70 ]; then
+  echo good
+else
+  echo bad
+fi
+
